@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA5F3791-7540-4310-9E7E-2ED5DC8A38C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KssOffice</RootNamespace>
+    <AssemblyName>KssOffice</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=3.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf.Kit, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Aspose.Pdf.Kit.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.5.0.0, Culture=neutral, PublicKeyToken=fa9a48344f15a022, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedOffice\AdvancedCell.cs" />
+    <Compile Include="AdvancedOffice\AdvancedPdf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdvancedOffice\AdvancedWord.cs" />
+    <Compile Include="AdvancedOffice\AgileHtml.cs" />
+    <Compile Include="AdvBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdvBrowser.Designer.cs">
+      <DependentUpon>AdvBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DataGridAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\DataGridAdvanced.designer.cs">
+      <DependentUpon>DataGridAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TextboxAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\TextboxAdvanced.designer.cs">
+      <DependentUpon>TextboxAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedOffice\KssConvert.cs" />
+    <Compile Include="Component\FlowContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\FlowContainer.Designer.cs">
+      <DependentUpon>FlowContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\StatusBar.Designer.cs">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Link.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\Link.Designer.cs">
+      <DependentUpon>Link.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KssOutput.cs" />
+    <Compile Include="Util\IStatus.cs" />
+    <Compile Include="Content\KssControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\KssControl.Designer.cs">
+      <DependentUpon>KssControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Delegation.cs" />
+    <Compile Include="Facade\UrlInfo.cs" />
+    <Compile Include="Util\IEHistory.cs" />
+    <Compile Include="Content\Url.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Content\Url.Designer.cs">
+      <DependentUpon>Url.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ConfigXml.cs" />
+    <Compile Include="Util\Network.cs" />
+    <Compile Include="Util\Configuration.cs" />
+    <Compile Include="AdvancedOffice\KssExport.cs" />
+    <Compile Include="Util\Constant.cs" />
+    <Compile Include="Mdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdi.Designer.cs">
+      <DependentUpon>Mdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WordExporter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Word2Table.Designer.cs">
+      <DependentUpon>WordExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Component\ListItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\HtmlExtractor.Designer.cs">
+      <DependentUpon>HtmlExtractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\HtmlExtractor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="AdvBrowser.resx">
+      <DependentUpon>AdvBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DataGridAdvanced.resx">
+      <DependentUpon>DataGridAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Link.resx">
+      <DependentUpon>Link.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TextboxAdvanced.resx">
+      <DependentUpon>TextboxAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FlowContainer.resx">
+      <DependentUpon>FlowContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdi.resx">
+      <DependentUpon>Mdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Content\Url.resx">
+      <DependentUpon>Url.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\WordExporter.resx">
+      <DependentUpon>WordExporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\HtmlExtractor.resx">
+      <DependentUpon>HtmlExtractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\kssoffice.chm" />
+    <None Include="bin\skin.ssk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\icon.ico" />
+    <Content Include="bin\images\donate.png" />
+    <Content Include="bin\images\greenpause.png" />
+    <Content Include="bin\images\greenstart.png" />
+    <Content Include="bin\images\greenstop.png" />
+    <Content Include="bin\images\html4.png" />
+    <Content Include="bin\images\html.png" />
+    <Content Include="bin\images\kingsure.png" />
+    <Content Include="bin\images\kssoffice.png" />
+    <Content Include="bin\images\kssweb.png" />
+    <Content Include="bin\images\word.png" />
+    <Content Include="bin\jquery-1.4.2.min.js" />
+    <Content Include="bin\netpage.css" />
+    <Content Include="bin\settings.xml" />
+    <Content Include="bin\Start.htm" />
+    <Content Include="icon.ico" />
+    <Content Include="Library\Aspose.Cells.dll" />
+    <Content Include="Library\Aspose.Pdf.dll" />
+    <Content Include="Library\Aspose.Pdf.Kit.dll" />
+    <Content Include="Library\HtmlAgilityPack.dll" />
+    <Content Include="Library\icon.ico" />
+    <Content Include="Library\Aspose.Words.dll" />
+    <Content Include="Library\IrisSkin2.dll" />
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dialog\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,62 @@
+﻿ <?xml version="1.0" encoding="utf-8"?> 
+ <Articles> 
+ <Article> 
+   <Title>年薪20万不是梦</title> 
+   <Url>http://zhoufoxcn.blog.51cto.com/792419/537324</Url> 
+   <CreateAt type="en">2011-04-07</price> 
+ </Article> 
+ <Article> 
+   <Title lang="eng">青龙传奇</title> 
+   <Url>http://blog.csdn.net/zhoufoxcn/archive/2010/11/23/6029021.aspx</Url> 
+   <CreateAt type="zh-cn">2010年11月23日</price> 
+ </Article> 
+ <Article> 
+   <Title>阿尔泰山之恋</title> 
+   <Url>http://blog.csdn.net/zhoufoxcn/archive/2011/06/12/6540223.aspx</Url> 
+   <CreateAt type="zh-cn">2011年06月12日</price> 
+ </Article> 
+ <Article> 
+   <Title lang="eng">PowerDesign高级应用</title> 
+   <Url>从北漂到西行漫记</Url> 
+   <CreateAt type="zh-cn">2007-09-08</price> 
+ </Article> 
+ </Articles> 
+        public static string Register()
+        {
+            try
+            {
+                string regkey = @"Software\Microsoft\Internet Explorer\MenuExt\导出到金速KssOffice";
+                string scriptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"KssReceiver.htm");
+                RegistryKey root = Registry.CurrentUser.OpenSubKey(regkey);
+                if (null == root)
+                {
+                    root = Registry.CurrentUser.CreateSubKey(regkey);
+                    root.SetValue("", scriptPath, RegistryValueKind.String);
+                    root.SetValue("Contexts", 0x000000f3, RegistryValueKind.DWord);
+
+                    return "IE浏览器快捷菜单注册成功";
+                }
+
+                return "已经注册";
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+        }
+
+            //int rowCount = singleExcel.Worksheets[0].Cells.Rows.Count == 0 ? 0 : singleExcel.Worksheets[0].Cells.Rows.Count + 2;
+
+
+            //Cell cell = singleExcel.Worksheets[0].Cells[rowCount, 0];
+            //cell.PutValue(aw.OriginalFileName);
+            //Style style = cell.GetStyle();
+            //style.ForegroundColor = Color.Blue;
+            //style.BackgroundColor = Color.Yellow;
+            //cell.SetStyle(style);
+          //   int rowCount = singleExcel.Worksheets[0].Cells.Rows.Count;
+
+		  <?xml version="1.0" encoding="utf-8"?> 
+
+
+

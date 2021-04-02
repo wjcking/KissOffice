@@ -1,0 +1,16 @@
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\ResolveAssemblyReference.cache
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.DataGridAdvanced.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.TextboxAdvanced.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.FlowContainer.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.Mdi.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.Properties.Resources.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.WordExporter.resources
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.exe
+E:\公司项目\Projects2010\KssOffice\KssOffice\obj\x86\Release\KssOffice.pdb
+E:\公司项目\Projects2010\KssOffice\KssOffice\bin\KssOffice.exe
+E:\公司项目\Projects2010\KssOffice\KssOffice\bin\KssOffice.pdb
+E:\公司项目\Projects2010\KssOffice\KssOffice\bin\Aspose.Cells.dll
+E:\公司项目\Projects2010\KssOffice\KssOffice\bin\Aspose.Words.dll
+E:\公司项目\Projects2010\KssOffice\KssOffice\bin\IrisSkin2.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\KssOffice\KssOffice\obj\x86\Release\KssOffice.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\KssOffice\KssOffice\obj\x86\Release\KssOffice.pdb

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CTS>
+	<KssOffice>
+		<RequestPage>http://www.easyfound.com.cn/request/param.aspx</RequestPage>
+		<WordTableFolder></WordTableFolder>
+		<WordConvertFolder></WordConvertFolder> 
+	</KssOffice>
+</CTS>

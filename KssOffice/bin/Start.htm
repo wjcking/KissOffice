@@ -1,0 +1,112 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    <link href="netpage.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        td
+        {
+            border-bottom: 1px solid;
+        }
+        th
+        {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+    <div style="padding: 5px 5px 5px 5px; display: ;" id="divKssOffice">
+        <div id="div2" style="text-align: right;" class="testimonial">
+         感谢您使用金速软件   本产品为免费软件，有了您的支持我们才会做的更好： <span id="version" style="font-style: italic;">(KssOffice v2.0)</span>
+            <a href="http://www.easyfound.com.cn/Software.aspx#bottom" target="_blank">
+                <img src="images\donate.png" alt="有了您的支持我们会做的更好" style="border: 0px; vertical-align: middle;
+                    width: 32px; height: 32px;" /></a>
+        </div>
+        <div class="testimonial" id="div3" style="overflow-y: auto">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images\word.png" alt="点击打开金速Word表格数据提取工具" id="imgWord" style="border: 0px;" />
+                    </td>
+                    <!--这里是软件说明-->
+                    <td id="kss" style="vertical-align: top; padding: 10px;">  
+                  
+                        金速Word表格数据提取工具 <a href="#" id="lnkWord">[点击进入]</a>
+                        <br />   <br />
+                        1) 金速Word表格数据提取工具可以提取word97以上版本的表格数据，批量导出到excel或网页，大大方便了抄录人员提高工作效率<br />
+                        2) 除了表格提取还支持批量转换功能可转换pdf,文本以及超文本文档.<br />
+                        3) 操作完毕后会在桌面上生成相关文件夹<br />
+                  
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="testimonial" id="div1" style="overflow-y: auto">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images\html.png" alt="点击打开金速网页数据提取工具" id="imgHtml" style="border: 0px;" />
+                    </td>
+                    <!--这里是软件说明-->
+                    <td id="Td1" style="vertical-align: top; padding: 10px;">  
+                  
+                        
+                        金速网页数据提取工具 <a href="#" id="lnkHtml">[点击进入]</a>
+                        <br />   <br />
+                        1) 金速网页数据提取工具可以提取网页中的所有数据，包括表格，列表、标签、段落等。大大方便了抄录人员提高工作效率<br />
+                        2) 网页内部链接提取工具支持批量提取所有站内链接：例如输入www.cctv.com,该网站下所有内部链接可批量提取<br />
+                        3) 提取完毕后可根据设置提取所需要的数据，操作完毕后会在桌面上生成相关文件夹<br /> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="testimonial" id="divRecent" style="overflow-y: auto">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images\kingsure.png" alt="金速 http://www.easyfound.com.cn" style="border: 0px; width: 122px; height: 122px;" />
+                    </td>
+                    <td>
+                        发布人：<br />
+                        <input id="txtUserName" name="txtUserName" type="text" size="16" maxlength="100"
+                            value="" />
+                        <br />
+                        个人需求、意见改进、软件bug等问题，请填写相关信息<br />
+                        <textarea cols="40" rows="3" name="txtMsg" id="txtMsg"></textarea>
+                        <input type="button" id="btnSubmit" value="提交我的留言" />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+     
+
+    </div>
+    </form>
+    <script type="text/javascript" src="http://localhost/request/param.aspx?type=kss "> </script>
+    <script type="text/javascript" src="http://www.easyfound.com.cn/request/param.aspx?type=kss "> </script>
+    <script type="text/javascript">
+        document.oncontextmenu = new Function('event.returnValue=false');
+        document.onselectstart = new Function('event.returnValue=false;');
+        $("img").css("cursor", "hand");
+        $("#btnSubmit").click(function () {
+            var userName = $("#txtUserName").val()
+            var message = $("#txtMsg").val()
+            window.external.postMessage(userName, message);
+        });
+
+        $("a").click(function () {
+            window.external.navigate($(this).attr("id"));
+        });
+        $("img").click(function () {
+            window.external.navigate($(this).attr("id"));
+        });
+    </script>
+</body>
+</html>
